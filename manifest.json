@@ -15,5 +15,13 @@
     ],
     "action": {
         "default_popup":"pop.html"
+    },
+    "declarative_net request": {
+        "rules_resources": [{
+            "id": "ruleset",
+            "enabled":true,
+            "path":"rules.json"
+        }],
+        "action_count_limit":10000
     }
 }
