@@ -1,0 +1,19 @@
+{
+    "manifest_version":3,
+    "name":"Listas - Sites Block",
+    "version": "1.0",
+    "permissions": ["storage", "webNavigation"],
+    "background": {
+        "service_worker": "background.js"
+    },
+    "host_permissions":["*://*/*"],
+    "content_scripts":[
+        {
+            "matches": ["<all_urls>"],
+            "js": ["content.js"]
+        }
+    ],
+    "action": {
+        "default_popup":"pop.html"
+    }
+}
